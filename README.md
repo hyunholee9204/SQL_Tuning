@@ -5,6 +5,21 @@
 
 ---
 
+## 데이터 준비 및 실행 방법 (How to Setup)
+
+이 프로젝트는 데이터의 용량이 크기 때문에 데이터베이스 덤프 파일을 직접 제공하지 않습니다.   
+대신, 제공된 Python 스크립트를 통해 누구나 동일한 테스트 환경(500만 건)을 구축할 수 있습니다.  
+
+1. **사전 준비**: 
+   - PostgreSQL 12버전 이상 설치 및 실행
+   - Python 3.x 설치
+   - `psycopg2`, `Faker` 라이브러리 설치 (`pip install psycopg2 faker`)
+
+2. **데이터 적재**:
+   - `sql_tuning.py`를 실행하여 500만 건의 데이터를 로컬 데이터베이스에 생성합니다.
+   ```bash
+   python sql_tuning.py
+
 ## 1. 쿼리 성능 최적화 (Indexing)
 특정 사용자 ID 조회 시 발생하는 **Full Table Scan** 문제를 B-Tree 인덱스를 통해 해결하였습니다.
 
