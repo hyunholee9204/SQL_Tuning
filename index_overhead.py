@@ -1,4 +1,4 @@
-# 인덱스 오버헤드 측정 스크립트
+# 인덱스 오버헤드 측정 스크립
 
 import psycopg2, time, io
 from faker import Faker
