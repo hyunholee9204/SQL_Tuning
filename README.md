@@ -20,6 +20,11 @@
    ```bash
    python sql_tuning.py
 
+3. **성능 측정**:
+   - 각 스크립트 상단의 DB_CONFIG 정보를 본인의 DB 환경에 맞게 수정한 후 실행하여 성능 지표를 확인합니다.
+
+---
+   
 ## 1. 쿼리 성능 최적화 (Indexing)
 특정 사용자 ID 조회 시 발생하는 **Full Table Scan** 문제를 B-Tree 인덱스를 통해 해결하였습니다.
 
